@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "*.js": [
+    "*.{js, ts}": [
       "eslint --fix",
       "git add"
     ]
