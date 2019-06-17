@@ -12,6 +12,7 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
+    "parser": "@typescript-eslint/parser",
     "rules": {
         "indent": [
             "error",
