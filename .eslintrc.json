@@ -10,7 +10,11 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
     },
     "parser": "@typescript-eslint/parser",
     "rules": {
@@ -30,6 +34,7 @@
             "error",
             "never"
         ],
-        "no-console": "off"
+        "no-console": "off",
+        "no-dupe-class-members": "off"
     }
 }

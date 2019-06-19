@@ -1,5 +1,3 @@
-import { addListener } from "cluster";
-
 class Vector3 {
 	x: number
 	y: number
@@ -26,7 +24,7 @@ class Vector3 {
 		} else if(typeof val === "number") {
 			return new Vector3(this.x * val, this.y * val, this.z * val)
 		} else {
-			throw new Error(`An argument must be number or vector3.`)
+			throw new Error("An argument must be number or vector3.")
 		}
 	}
 	dot(vec: Vector3): number {
@@ -49,4 +47,4 @@ methods:
 	equals
 */
 
-module.exports = Vector3
+export default Vector3
