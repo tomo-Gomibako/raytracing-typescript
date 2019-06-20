@@ -16,6 +16,7 @@ const postBuildCommand = {
 
 module.exports = {
 	mode: "development",
+	target: "node",
 	entry: "./src/index.ts",
 	module: {
 		rules: [{
@@ -30,6 +31,10 @@ module.exports = {
 	output: {
 		filename: "bundle.js",
 		path: path.resolve(__dirname, "dist")
+	},
+	node: {
+		__dirname: false,
+		__filename: false
 	},
 	plugins: [postBuildCommand]
 }
